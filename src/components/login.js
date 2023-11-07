@@ -29,7 +29,7 @@ function Login() {
     }
 
     try {
-      const request = await axios.post('http://localhost:1337/api/auth/local', {
+      const request = await axios.post('https://radiant-everglades-55627-9f01a972e6c9.herokuapp.com/api/auth/local', {
         identifier: email,
         password: password,
       });

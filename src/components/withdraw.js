@@ -30,7 +30,7 @@ function Withdraw() {
     if (!validate(withdraw, "withdraw")) return;
 
     try {
-      const request = await axios.put(`http://localhost:1337/api/users/${ctx.loggedInUser.user.id}`, {
+      const request = await axios.put(`https://radiant-everglades-55627-9f01a972e6c9.herokuapp.com/api/users/${ctx.loggedInUser.user.id}`, {
         balance: ctx.loggedInUser.user.balance*1 - withdraw*1
       }, {
         headers: {

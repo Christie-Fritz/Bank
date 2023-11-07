@@ -41,7 +41,7 @@ function CreateAccount() {
     if (!validateLength(password, 'password')) return;
 
     try {
-      const request = await axios.post('http://localhost:1337/api/auth/local/register', {
+      const request = await axios.post('https://radiant-everglades-55627-9f01a972e6c9.herokuapp.com/api/auth/local/register', {
         username: name,
         email: email,
         password: password,
