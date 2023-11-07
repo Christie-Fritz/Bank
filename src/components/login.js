@@ -51,12 +51,6 @@ function Login() {
       setTimeout(() => setStatus(''), 3000);
     }
   }
- 
-  function clearForm() {
-    setEmail("");
-    setPassword("");
-    setShow(true);
-  }
 
   function isDisabled() {
     if (!email && !password) return true;
